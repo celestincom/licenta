@@ -1,0 +1,67 @@
+/* .card {
+    background: gray;
+    width: 100%;
+    height: 20vh;
+} */
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3rem;
+    margin: 1rem 5rem;
+}
+
+.card {
+    height: 10rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: rgb(196, 195, 195); */
+    grid-column: span 3;
+    font-size: 1.2rem;
+    padding: 3rem;
+    box-shadow: 0.7rem 0.7rem 0rem black;
+    border: 4px solid rgb(39, 39, 39);
+    gap: 2rem;
+}
+
+.card::before {
+    content: "";
+    /* background-image: url('https://wallpaperaccess.com/full/185289.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: rgb(196, 195, 195); */
+    position: absolute;
+    display: block;
+    z-index: -1;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.85;
+    /* background-color: rgba(0,0,0,0.25); */
+  }
+
+.card p{
+    line-height: 2rem;
+    display: none
+}
+
+.active p {
+    display: block;
+}
+
+.active {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    order: 0;
+    height: auto;
+}
+
+.isInactive {
+    grid-column: span 2;
+}

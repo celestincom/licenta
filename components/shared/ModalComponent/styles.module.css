@@ -1,0 +1,42 @@
+.gradient {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 90%;
+  border-radius: 20px;
+  /* width: 70%; */
+  /* max-width: 1200px; */
+  padding: 35px 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* background-color: rgba(68, 167, 224, 0.5); */
+  /* background-color: rgba(77, 154, 199, 0.5); */
+  /* opacity: 1; */
+  /* background-position: center; */
+  /* background-size: cover; */
+  background-color: rgb(217, 225, 226);
+  /* background-repeat: no-repeat; */
+  /* background-image: url('https://wallpaperaccess.com/full/185289.jpg') */
+  /* background: linear-gradient(90deg, rgb(150, 146, 228) 0%, rgba(128,128,230,1) 35%, rgb(84, 99, 226) 100%); */
+}
+
+.gradient::before {
+  content: "";
+  background-image: url('https://wallpaperaccess.com/full/185289.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  z-index: -2;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+  background-color: rgba(0,0,0,0.25);
+}

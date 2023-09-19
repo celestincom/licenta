@@ -1,0 +1,32 @@
+.navLogo {
+  cursor: pointer;
+}
+
+.image {
+  width: 90px;
+  height: 28px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+  width: fit-content;
+  white-space: nowrap;
+  /* height:65px; */
+}
+
+.navitem {
+  display: flex;
+  /* height: 100%; */
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.navitem a {
+  text-decoration: none;
+  text-transform: capitalize;
+}

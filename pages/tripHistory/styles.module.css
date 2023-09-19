@@ -1,0 +1,45 @@
+.container {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    /* margin-top: 2%; */
+    /* background-color: #35617d; */
+    z-index: -6;
+    background-image: url('https://images.unsplash.com/photo-1626963522611-66d1861054f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gradient {
+    position: relative;
+    width: 70vw;
+    min-height: 20vh;
+    /* background-color: #407596; */
+    /* background-image: url('https://visit-romania.com/wp-content/uploads/2019/02/BUCHAREST-PANORAMIC-TOUR.jpg'); */
+    border-radius: 20px;
+    /* box-shadow: 5px 10px #888888; */
+    display: flex;
+    justify-content: center;
+    align-items: center,
+}
+
+.gradient::before {
+    content: "";
+    /* background-image: url('https://visit-romania.com/wp-content/uploads/2019/02/BUCHAREST-PANORAMIC-TOUR.jpg'); */
+    background-size: cover;
+    background-color: #407596;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 20px;
+    display: block;
+    z-index: -1;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* opacity: 0.65; */
+    background-color: rgba(0,0,0,0.65);
+  }

@@ -1,0 +1,22 @@
+.gradient {
+    position: relative
+  };
+
+  .gradient::before {
+    content: "";
+    /* background-image: url('https://visit-romania.com/wp-content/uploads/2019/02/BUCHAREST-PANORAMIC-TOUR.jpg'); */
+    background-size: cover;
+    background-color: #407596;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 20px;
+    display: block;
+    z-index: -1;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* opacity: 0.65; */
+    background-color: rgba(0,0,0,0.65);
+  }

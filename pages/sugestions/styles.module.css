@@ -1,0 +1,9 @@
+.container {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    /* margin-top: 2%; */
+    /* background-color: #35617d; */
+    z-index: -6;
+}
